@@ -1007,4 +1007,12 @@ config PTHREAD_STACK_DEFAULT
 	---help---
 		Default pthread stack size
 
+config STACK_COLORATION
+	bool "Stack Coloration will init the stack memory to the value of STACK_COLOR"
+	default n
+	depends on ARCH_HAVE_STACKCHECK
+	---help---
+        Enable Stack Coloration to use the stack checking API in a non debug build
+		Only supported by a few architectures.
+
 endmenu # Stack and heap information

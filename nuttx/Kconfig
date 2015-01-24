@@ -529,14 +529,6 @@ config DEBUG_STACK
 	---help---
 		Enable hooks to check stack usage.  Only supported by a few architectures.
 
-config STACK_COLORATION
-	bool "Stack Coloration will init the stack memory to the value of STACK_COLOR"
-	default n
-	depends on ARCH_HAVE_STACKCHECK
-	---help---
-        Enable Stack Coloration to use the stack checking API in a non debug build
-		Only supported by a few architectures.
-
 comment "Driver Debug Options"
 
 config DEBUG_LCD
